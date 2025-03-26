@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: VirtualThread
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:FREE
+    username: c##hieu
+    password: hieu
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.OracleDialect
+  threads:
+    virtual:
+      enabled: true
